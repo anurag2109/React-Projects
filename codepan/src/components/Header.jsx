@@ -5,6 +5,7 @@ import { styled } from '@mui/material/styles';
 const Container = styled(AppBar)`
 background: #060606;
 position: static;
+border-bottom: 1px solid #2f2f2f;
 `
 const Header = () => {
 
