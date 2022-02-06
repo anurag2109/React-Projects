@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState} from 'react';
 import { Box } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import { DataContext } from '../context/DataProvider';
+import DataContext  from '../context/DataProvider';
 
 const Container = styled(Box)`
     height: 41vh;

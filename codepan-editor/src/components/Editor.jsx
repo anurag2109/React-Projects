@@ -37,9 +37,12 @@ const Heading = styled(Box)`
 `;
 
 
-const Editor = ({color, heading, icon, language}) => {
+const Editor = ({color, heading, icon, language, value, onChange}) => {
 
     const [open, setOpen] = useState(true);
+    const handleChange = (editor, data, value) =>{
+        onChange(value);
+    }
 
   return (
     <Container style={open ? null : {flexGrow: 0}}>
@@ -74,6 +77,8 @@ const Editor = ({color, heading, icon, language}) => {
                     lineNumbers: true,
                     theme: 'material'
                 }}
+                value={value}
+                onBeforeChange={handleChange}
             />
       </Box>
     </Container>

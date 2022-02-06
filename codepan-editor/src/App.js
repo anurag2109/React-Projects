@@ -1,11 +1,12 @@
 import { Box } from '@mui/material';
 import Home from './components/Home';
+import DataProvider from './context/DataProvider';
 
 function App() {
   return (
-    <Box>
+    <DataProvider>
       <Home/>
-    </Box>
+    </DataProvider>
   );
 }
 
